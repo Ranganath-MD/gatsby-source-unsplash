@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Gatsby Unsplash`,
+    description: `Get the images from Unspalsh`,
+    author: `Ranganath`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,12 +23,23 @@ module.exports = {
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
+        display: `Gatsby unsplash`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-unsplash`,
+      options: {
+        appId: `__ToMf7s2CmgMgFZuUqmgCE_VYtIrXUzaLCiuyTmv8A`,
+        collections: [
+          `1353633`,
+          `1758353`,
+          `1971015`,
+          `894`,
+          `1538150`
+        ],
+        perPage: `100`
+      },
+    },
   ],
 }
