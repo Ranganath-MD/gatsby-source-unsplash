@@ -34,6 +34,7 @@ const Unsplash = () => {
                                 src={item.node.urls.full}
                                 alt={item.node.urls.alt_description}
                             />
+                            <p>PC: {item.node.user.name}</p>
                         </div>
                     )
                 })

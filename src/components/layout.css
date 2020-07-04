@@ -22,6 +22,17 @@ body {
   columns: 4;
   column-gap: 20px;
 }
+.mansonry-content{
+  break-inside: avoid;
+}
+.mansonry-content img {
+  margin-bottom: 0px;
+}
+.mansonry-content p {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(82, 82, 82);
+}
 
 @media (max-width:1000px) {
   .mansonry {
