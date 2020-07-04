@@ -12,7 +12,7 @@ const Header = () => {
       justifyContent: `space-between`
     }}>
       <h2>Header</h2>
-      <a href="">
+      <a href="https://github.com/Ranganath-MD/gatsby-source-unsplash" target="_blank">
         <div style={{
           width: 30,
         }}>
